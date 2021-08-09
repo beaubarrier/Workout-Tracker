@@ -10,6 +10,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+//mongodb://localhost/fathomless-stream-46932
 //mongodb://localhost/workout
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fathomless-stream-46932", {
     useNewUrlParser: true,
