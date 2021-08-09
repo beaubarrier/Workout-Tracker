@@ -10,12 +10,11 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb + srv://beaubarrier:<password>@cluster0.hxmal.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useFindAndModify: false
 });
-
-
+// mongodb://localhost/workout
 // routes
 app.use(require("./routes/apiRoutes"));
 app.use(require("./routes/htmlRoutes"));
