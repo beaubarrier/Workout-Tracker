@@ -4,7 +4,7 @@ var db = require('../models/workout');
 router.get("/api/workouts", function (req, res) {
     db.find({})
         .then(records => {
-            console.log("Get", records)
+            console.log("get", records)
             res.json(records)
         })
 })
@@ -28,9 +28,11 @@ router.post("/api/workouts/", function (req, res) {
 router.get("/api/workouts/range", function (req, res) {
     db.find({}).limit(14)
         .then(records => {
-            console.log("Get", records)
+            console.log("get", records)
             res.json(records)
         })
 })
 
+
 module.exports = router;
+//comment
