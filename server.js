@@ -12,6 +12,7 @@ app.use(express.static("public"));
 
 //mongodb://localhost/fathomless-stream-46932
 //mongodb://localhost/workout
+//Works flawleslly when it is run locally.
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fathomless-stream-46932", {
     useNewUrlParser: true,
     useFindAndModify: false,
