@@ -10,23 +10,18 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+//mongodb://localhost/workout
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fathomless-stream-46932", {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
     useCreateIndex: true
 });
-// mongodb://localhost/workout
+
 // routes
 app.use(require("./routes/apiRoutes"));
 app.use(require("./routes/htmlRoutes"));
 
-// var route = (require("./public/api"));
-
-// app.use(function (req, res, next) {
-//     console.log('Time:', Date.now());
-//     next();
-// });
 
 
 
