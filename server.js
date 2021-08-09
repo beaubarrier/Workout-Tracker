@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/sheilded-falls", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fathomless-stream", {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
