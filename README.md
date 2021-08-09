@@ -1,9 +1,10 @@
 
+
 Workout Tracker
 =========================
 Welcome to my note taker app! 
 <br><br><br>
-
+<img width="1173" alt="Screen Shot 2021-08-08 at 8 56 41 PM" src="https://user-images.githubusercontent.com/78766978/128659094-fa53cab0-0405-46c5-a2b5-a3d934576f24.png">
 <br><br>
 
 Table of contents
