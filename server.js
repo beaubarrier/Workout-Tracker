@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fathomless-stream", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fathomless-stream-46932", {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
