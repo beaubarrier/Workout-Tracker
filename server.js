@@ -22,10 +22,6 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fathomless-stre
 app.use(require("./routes/apiRoutes"));
 app.use(require("./routes/htmlRoutes"));
 
-
-
-
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
 });
-
