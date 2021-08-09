@@ -10,9 +10,11 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb + srv://beaubarrier:<password>@cluster0.hxmal.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/sheilded-falls", {
     useNewUrlParser: true,
-    useFindAndModify: false
+    useFindAndModify: false,
+    useUnifiedTopology: true,
+    useCreateIndex: true
 });
 // mongodb://localhost/workout
 // routes
