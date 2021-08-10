@@ -2,7 +2,7 @@ const API = {
   async getLastWorkout() {
     let res;
     try {
-      res = await fetch("/api/workouts");
+      res = await fetch("/api/workouts/");
     } catch (err) {
       console.log(err)
     }
@@ -13,7 +13,7 @@ const API = {
   async addExercise(data) {
     const id = location.search.split("=")[1];
     try {
-      const res = await fetch("/api/workouts" + id, {
+      const res = await fetch("/api/workouts/" + id, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
@@ -27,7 +27,7 @@ const API = {
   },
   async createWorkout(data = {}) {
     try {
-      const res = await fetch("/api/workouts", {
+      const res = await fetch("/api/workouts/", {
         method: "POST",
         body: JSON.stringify(data),
         headers: { "Content-Type": "application/json" }
